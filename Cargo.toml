@@ -1,0 +1,21 @@
+[package]
+categories = ["lombok"]
+description = "r-lombok is a rust macros that automatically plugs into your editor and build tools"
+edition = "2021"
+homepage = "https://github.com/dengzhq/r-lombok-macros"
+keywords = ["lombok"]
+license = "MIT"
+name = "r-lombok-macros"
+readme = "README.md"
+repository = "https://github.com/dengzhq/r-lombok-macros"
+authors = ["dengzq3 <dengzq3@xiaopeng.com>"]
+version = "0.0.1"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "*"
+proc-macro2 = "*"
+syn = { version = "*", features = ["full"] }
+
