@@ -10,6 +10,8 @@ use syn::parse::Parse;
 
 mod getter;
 mod setter;
+mod data;
+mod accessors;
 
 /// field get method prefix
 pub(crate) const METHOD_GET_PREFIX: &str = "get_";
@@ -33,6 +35,22 @@ pub fn derive_setter(input: TokenStream) -> TokenStream {
     expand_with(input, setter::expand)
 }
 
+/// like java lombok Data annotation, but only contains getter、setter
+///
+///
+#[proc_macro_derive(Data)]
+pub fn derive_data(input: TokenStream) -> TokenStream {
+    expand_with(input, data::expand)
+}
+
+
+/// like java lombok accessors annotation,but contains data and no chain attr
+///
+///
+#[proc_macro_derive(Accessors)]
+pub fn derive_accessors(input: TokenStream) -> TokenStream {
+    expand_with(input, accessors::expand)
+}
 
 fn expand_with<F, I, K>(input: TokenStream, f: F) -> TokenStream
     where
