@@ -1,10 +1,6 @@
 use r_lombok_macros::Accessors;
 
-/// 源功能描述:
-/// 版权所有:dengzhq
-/// 未经本人许可,不得以任何方式复制或使用本程序任何部分</p>
-/// @author: <a href="mailto:dengzq3@xiaopeng.com">dengzhq</a>
-#[derive(Debug, Accessors)]
+#[derive(Accessors)]
 struct Company {
     name: &'static str,
     boss: &'static str,

@@ -9,7 +9,6 @@ pub(crate) fn expand(item: Item) -> syn::Result<TokenStream> {
     match item {
         syn::Item::Struct(item) => {
             let syn::ItemStruct {
-                attrs: _attrs,
                 ident,
                 generics,
                 fields,

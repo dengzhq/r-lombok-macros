@@ -2,10 +2,6 @@ use std::fmt::Debug;
 
 use r_lombok_macros::{Getter, Setter};
 
-/// 源功能描述: show origin code： cargo expand --test=getter_setter --color=always
-/// 版权所有:dengzhq
-/// 未经本人许可,不得以任何方式复制或使用本程序任何部分</p>
-/// @author: <a href="mailto:dengzq3@xiaopeng.com">dengzhq</a>
 #[derive(Debug, Getter, Setter)]
 struct Company {
     name: &'static str,

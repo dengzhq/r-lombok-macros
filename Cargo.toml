@@ -1,5 +1,5 @@
 [package]
-categories = ["lombok"]
+categories = ["macro"]
 description = "r-lombok is a rust macros that automatically plugs into your editor and build tools"
 edition = "2021"
 homepage = "https://github.com/dengzhq/r-lombok-macros"
@@ -9,7 +9,7 @@ name = "r-lombok-macros"
 readme = "README.md"
 repository = "https://github.com/dengzhq/r-lombok-macros"
 authors = ["dengzq3 <dengzq3@xiaopeng.com>"]
-version = "0.0.1"
+version = "0.0.2"
 
 [lib]
 proc-macro = true
