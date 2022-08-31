@@ -8,8 +8,8 @@ license = "MIT"
 name = "r-lombok-macros"
 readme = "README.md"
 repository = "https://github.com/dengzhq/r-lombok-macros"
-authors = ["dengzq3 <dengzq3@xiaopeng.com>"]
-version = "0.0.3"
+authors = ["dengzhq <690594922@qq.com>"]
+version = "0.0.4"
 
 [lib]
 proc-macro = true
